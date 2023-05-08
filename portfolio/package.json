@@ -12,7 +12,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "focuspoint": "^1.0.6",
     "vue": "^3.2.47",
+    "vue-focuspoint-component": "^2.0.1",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
