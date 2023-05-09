@@ -109,6 +109,7 @@ li .img-wrapper img {
     align-items: center;
     margin: 7px;
     background-color: #dddbdb;
+    overflow: hidden;
 }
 
 .hover-content {
