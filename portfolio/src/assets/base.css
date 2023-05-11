@@ -72,3 +72,18 @@ body {
   font-family: 'Orbitron', sans-serif;
   color: white;
 }
+
+p {
+  color: #ffffff70;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+h2{
+  color: #1dc4ad;
+  font-size: 3rem;
+}

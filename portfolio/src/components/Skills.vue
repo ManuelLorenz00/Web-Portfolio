@@ -2,7 +2,7 @@
   <section>
     <div class="skill-header">
       <h2 class="headline">My Skillstack</h2>
-      <p class="text">Here are some of the skills that I've acquired over the years. From front-end web development to
+      <p class="text grey">Here are some of the skills that I've acquired over the years. From front-end web development to
         server-side
         scripting, I've worked with a variety of technologies to bring my ideas to life.</p>
     </div>
@@ -96,7 +96,6 @@ section {
   font-weight: bold;
   font-size: 1.5rem;
   text-transform: uppercase;
-  cursor: pointer;
   transition: background-color 0.3s ease;
   opacity: 0.8;
 }

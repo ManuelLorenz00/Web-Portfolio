@@ -24,12 +24,6 @@ export default {
     justify-content: center;
     flex-direction: column;
 }
-h1{
-    font-size: 4rem;
-    line-height: 1.2;
-    font-weight: 500;
-    color: #ffffff;
-}
 p{
     font-size: 1.6rem;
     padding: 2rem 0;
