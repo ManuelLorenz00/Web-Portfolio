@@ -19,7 +19,7 @@ export default {
                     <a>Skills</a>
                 </li>
                 <li>
-                    <a>CV</a>
+                    <a>Resume</a>
                 </li>
                 <li>
                     <a>Contact</a>

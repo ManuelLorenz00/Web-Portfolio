@@ -6,14 +6,14 @@ export default {
 
 <template>
     <section class="section">
-        <h2 class="headline">My portfolio</h2>
+        <h2 class="headdivne">My portfolio</h2>
         <p class="text grey">
             Here's a collection of projects I've had the pleasure of working on with incredibly talented individuals. Each
-            one represents a unique challenge and an opportunity for growth. I'm proud of what we accomplished together, and
+            one represents a unique challenge and an opportunity for growth. I'm proud of what we accompdivshed together, and
             I look forward to taking on even bigger challenges in the future.
         </p>
-        <ul>
-            <li>
+        <div class="portfolio-grid">
+            <div class="cell">
                 <div class="img-wrapper">
                     <div class="hover-content">
                         <div class="hover-text">
@@ -23,8 +23,8 @@ export default {
                     </div>
                     <img src="@/assets/RW-removebg-preview.png">
                 </div>
-            </li>
-            <li>
+            </div>
+            <div class="cell">
                 <div class="img-wrapper">
                     <div class="hover-content">
                         <div class="hover-text">
@@ -34,8 +34,8 @@ export default {
                     </div>
                     <img class="PP" src="@/assets/P&P.png">
                 </div>
-            </li>
-            <li>
+            </div>
+            <div class="cell">
                 <div class="img-wrapper">
 
                     <div class="hover-content">
@@ -45,8 +45,8 @@ export default {
                     </div>
                     <img src="@/assets/JH.png">
                 </div>
-            </li>
-            <li>
+            </div>
+            <div class="cell">
                 <div class="img-wrapper">
                     <div class="hover-content">
                         <div class="hover-text">
@@ -55,8 +55,8 @@ export default {
                     </div>
                     <img src="@/assets/LS.png">
                 </div>
-            </li>
-            <li>
+            </div>
+            <div class="cell">
                 <div class="img-wrapper">
                     <div class="hover-content">
                         <div class="hover-text">
@@ -65,8 +65,8 @@ export default {
                     </div>
                     <img src="@/assets/OC.png">
                 </div>
-            </li>
-            <li>
+            </div>
+            <div class="cell">
                 <div class="img-wrapper">
                     <div class="hover-content">
                         <div class="hover-text">
@@ -75,8 +75,8 @@ export default {
                     </div>
                     <img src="@/assets/BT.png">
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -91,34 +91,26 @@ export default {
     padding: 2rem 0;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: -7px;
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5rem;
 }
-
-li {
-    width: 33%;
-    position: relative;
-    overflow: hidden;
+.cell{
     height: 300px;
 }
 
-li:hover img {
+.cell:hover img {
     transform: scale(1.14);
 }
 
-li:hover .hover-content {
+.cell:hover .hover-content {
     background: rgba(0, 0, 0, 0.8);
 }
 
-li:hover .hover-text p{
+.cell:hover .hover-text p{
     opacity: 1;
 }
-
 
 .hover-text p{
     opacity: 0;
@@ -126,7 +118,7 @@ li:hover .hover-text p{
     color: #1dc4ad;
 }
 
-li .img-wrapper img {
+.cell .img-wrapper img {
     object-fit: cover;
     height: auto;
     max-width: 100%;
@@ -142,6 +134,7 @@ li .img-wrapper img {
     margin: 7px;
     background-color: #ffffff;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .hover-content {
@@ -157,6 +150,7 @@ li .img-wrapper img {
     justify-content: center;
     align-items: center;
     transition: all .3s ease-in;
+    border-radius: 5px;
 }
 
 .img-text{

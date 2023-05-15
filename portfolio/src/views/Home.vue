@@ -4,13 +4,16 @@ import Hero from "../components/Hero.vue"
 import Portfolio from "../components/Portfolio.vue"
 import Skills from "../components/Skills.vue"
 import CV from "../components/CV.vue"
+import Contact from "../components/Contact.vue"
+
 export default {
     components: {
         Navbar,
         Hero,
         Portfolio,
         Skills,
-        CV
+        CV,
+        Contact
     }
 }
 </script>
@@ -22,6 +25,7 @@ export default {
         <Portfolio />
         <Skills/>
         <CV/>
+        <Contact/>
     </div>
 </template>
 

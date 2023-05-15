@@ -83,6 +83,7 @@ section {
   text-align: center;
   position: relative;
   height: fit-content;
+  border-radius: 5px;
 }
 
 .skill-name {
@@ -98,6 +99,7 @@ section {
   text-transform: uppercase;
   transition: background-color 0.3s ease;
   opacity: 0.8;
+  border-radius: 5px;
 }
 
 .skill-name:hover {
