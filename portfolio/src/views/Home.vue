@@ -3,12 +3,14 @@ import Navbar from "../components/Navbar.vue"
 import Hero from "../components/Hero.vue"
 import Portfolio from "../components/Portfolio.vue"
 import Skills from "../components/Skills.vue"
+import CV from "../components/CV.vue"
 export default {
     components: {
         Navbar,
         Hero,
         Portfolio,
-        Skills
+        Skills,
+        CV
     }
 }
 </script>
@@ -19,6 +21,7 @@ export default {
         <hero />
         <Portfolio />
         <Skills/>
+        <CV/>
     </div>
 </template>
 
