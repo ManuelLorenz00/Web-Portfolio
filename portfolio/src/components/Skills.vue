@@ -51,20 +51,10 @@ export default {
 </script>
 
 <style scoped>
-section {
-  padding: 5.5rem 4rem 9rem;
-}
 
 .headline {
   color: #1dc4ad;
   font-size: 3rem;
-  text-align: left;
-}
-
-.text {
-  max-width: 50%;
-  font-size: 1rem;
-  padding: 2rem 0;
   text-align: left;
 }
 

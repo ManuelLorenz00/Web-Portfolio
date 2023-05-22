@@ -32,15 +32,6 @@ export default {
 </script>
   
 <style scoped>
-section {
-    padding: 5.5rem 4rem 9rem;
-}
-
-.text {
-    max-width: 50%;
-    font-size: 1rem;
-    padding: 2rem 0;
-}
 
 .contact-grid {
     display: grid;

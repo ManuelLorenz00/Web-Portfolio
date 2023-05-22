@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="section">
+    <section>
         <h2 class="headdivne">My portfolio</h2>
         <p class="text grey">
             Here's a collection of projects I've had the pleasure of working on with incredibly talented individuals. Each
@@ -81,15 +81,6 @@ export default {
 </template>
 
 <style scoped>
-.section {
-    padding: 5.5rem 4rem 9rem;
-}
-
-.text {
-    max-width: 50%;
-    font-size: 1rem;
-    padding: 2rem 0;
-}
 
 .portfolio-grid{
     display: grid;
