@@ -12,13 +12,13 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "emailjs-com": "^3.2.0",
     "focuspoint": "^1.0.6",
+    "lodash": "^4.17.21",
     "scrollreveal": "^4.0.9",
     "vue": "^3.2.47",
     "vue-focuspoint-component": "^2.0.1",
     "vue-router": "^4.1.6",
-    "emailjs-com": "^3.2.0",
-    "lodash": "^4.17.21",
     "vue-scrollactive": "^0.9.3"
   },
   "devDependencies": {
