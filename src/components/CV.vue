@@ -32,7 +32,7 @@ export default {
         <div class="t4">Codersbay Vienna <br> Diplomlehrgang Softwareentwicklung</div>
         <div class="t1">Caritas <br> Ausbildung Fachsozialbetreuer</div>
         <div class="t2">01/2021 - 06/2021</div>
-        <div class="t3">08/2019 - 08/2022</div>
+        <div class="t3">08/2019 - 08/2020</div>
         <div class="t4">Wiener Sozialdienste <br> Heimhilfe</div>
         <div class="t1">Wiener Sozialdienste <br> Ausbildung Heimhilfe</div>
         <div class="t2">01/2019 - 08/2019</div>
