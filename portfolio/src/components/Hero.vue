@@ -1,35 +1,61 @@
-<script>
-export default {
-
-}
-</script>
-
 <template>
     <section class="section">
         <h1>
-            Manuel Lorenz 
+            Manuel Lorenz
             <br>
             Junior Frontend Developer
         </h1>
         <p>Creative / Detail-oriented / Adaptable</p>
-        <button>Contact me !</button>
+        <button v-for="route in routes" :key="route.path">
+            <router-link class="router-link" :to="route.path" :class="{ active: activeNavItem === route.name }"
+                @click="scrollTo(route.name)">
+                {{ route.name }}
+            </router-link>
+        </button>
     </section>
 </template>
 
+<script>
+import { useRoute } from 'vue-router';
+import ScrollspyMixin from '@/assets/ScrollspyMixin.js';
+export default {
+    mixins: [ScrollspyMixin],
+    computed: {
+        routes() {
+            const route = useRoute();
+            return [
+                { name: 'Contact', path: '#Contact' },
+            ];
+        },
+    },
+    methods: {
+        scrollTo(componentName) {
+            const element = document.getElementById(componentName);
+
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        },
+    },
+};
+</script>
+
 <style scoped>
-.section{
+.section {
     height: 100vh;
     padding: 9rem 4rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-p{
+
+p {
     font-size: 1.6rem;
     padding: 2rem 0;
     color: #8d8d8d;
 }
-button{
+
+button {
     width: fit-content;
     background-color: transparent;
     border: 1px solid #1dc4ad;
@@ -39,7 +65,8 @@ button{
     letter-spacing: 3px;
     transition: all .3s;
 }
-button:after{
+
+button:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -50,7 +77,8 @@ button:after{
     border-radius: 10rem;
     z-index: -2;
 }
-button:before{
+
+button:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -61,11 +89,22 @@ button:before{
     transition: all .3s;
     z-index: -1;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
     color: #ffffff;
 }
-button:hover::before{
+
+button:hover::before {
     width: 100%;
+}
+
+button .router-link{
+    color: #1dc4ad !important;
+    text-decoration: none;
+}
+button:hover .router-link{
+    color: #ffffff !important;
+    text-decoration: none;
 }
 </style>

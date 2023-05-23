@@ -45,6 +45,7 @@ export default {
     align-items: center;
     margin: 1rem 0 0 0;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .svg-holder a:hover {
