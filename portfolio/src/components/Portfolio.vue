@@ -5,89 +5,93 @@ export default {
 </script>
 
 <template>
-    <section>
-        <h2 class="headdivne">My portfolio</h2>
-        <p class="text grey">
-            Here's a collection of projects I've had the pleasure of working on with incredibly talented individuals. Each
-            one represents a unique challenge and an opportunity for growth. I'm proud of what we accompdivshed together, and
-            I look forward to taking on even bigger challenges in the future.
-        </p>
-        <div class="portfolio-grid">
-            <div class="cell">
-                <div class="img-wrapper">
-                    <div class="hover-content">
-                        <div class="hover-text">
-                            <p>Webdesign</p>
-                            <p>Coupon plugin</p>
+    <div class="scrollactive-item" id="portfolio">
+        <section>
+            <h2 class="headdivne">My portfolio</h2>
+            <p class="text grey">
+                Here's a collection of projects I've had the pleasure of working on with incredibly talented individuals.
+                Each
+                one represents a unique challenge and an opportunity for growth. I'm proud of what we accompdivshed
+                together, and
+                I look forward to taking on even bigger challenges in the future.
+            </p>
+            <div class="portfolio-grid">
+                <div class="cell">
+                    <div class="img-wrapper">
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <p>Webdesign</p>
+                                <p>Coupon plugin</p>
+                            </div>
                         </div>
+                        <img src="@/assets/RW-removebg-preview.png">
                     </div>
-                    <img src="@/assets/RW-removebg-preview.png">
                 </div>
-            </div>
-            <div class="cell">
-                <div class="img-wrapper">
-                    <div class="hover-content">
-                        <div class="hover-text">
-                            <p>Webdesign</p>
-                            <p>Application Plugin</p>
+                <div class="cell">
+                    <div class="img-wrapper">
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <p>Webdesign</p>
+                                <p>Application Plugin</p>
+                            </div>
                         </div>
+                        <img class="PP" src="@/assets/P&P.png">
                     </div>
-                    <img class="PP" src="@/assets/P&P.png">
                 </div>
-            </div>
-            <div class="cell">
-                <div class="img-wrapper">
+                <div class="cell">
+                    <div class="img-wrapper">
 
-                    <div class="hover-content">
-                        <div class="hover-text">
-                            <p>Website Relaunch</p>
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <p>Website Relaunch</p>
+                            </div>
                         </div>
+                        <img src="@/assets/JH.png">
                     </div>
-                    <img src="@/assets/JH.png">
+                </div>
+                <div class="cell">
+                    <div class="img-wrapper">
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <p>Webdesign</p>
+                            </div>
+                        </div>
+                        <img src="@/assets/LS.png">
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="img-wrapper">
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <p>Webdesign</p>
+                            </div>
+                        </div>
+                        <img src="@/assets/OC.png">
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="img-wrapper">
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <p>Email Newsletter</p>
+                            </div>
+                        </div>
+                        <img src="@/assets/BT.png">
+                    </div>
                 </div>
             </div>
-            <div class="cell">
-                <div class="img-wrapper">
-                    <div class="hover-content">
-                        <div class="hover-text">
-                            <p>Webdesign</p>
-                        </div>
-                    </div>
-                    <img src="@/assets/LS.png">
-                </div>
-            </div>
-            <div class="cell">
-                <div class="img-wrapper">
-                    <div class="hover-content">
-                        <div class="hover-text">
-                            <p>Webdesign</p>
-                        </div>
-                    </div>
-                    <img src="@/assets/OC.png">
-                </div>
-            </div>
-            <div class="cell">
-                <div class="img-wrapper">
-                    <div class="hover-content">
-                        <div class="hover-text">
-                            <p>Email Newsletter</p>
-                        </div>
-                    </div>
-                    <img src="@/assets/BT.png">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </template>
 
 <style scoped>
-
-.portfolio-grid{
+.portfolio-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: .5rem;
 }
-.cell{
+
+.cell {
     height: 300px;
 }
 
@@ -99,11 +103,11 @@ export default {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.cell:hover .hover-text p{
+.cell:hover .hover-text p {
     opacity: 1;
 }
 
-.hover-text p{
+.hover-text p {
     opacity: 0;
     transition: all .6s ease-in;
     color: #1dc4ad;
@@ -144,7 +148,7 @@ export default {
     border-radius: 5px;
 }
 
-.img-text{
+.img-text {
     position: absolute;
     top: 50%;
     left: 50%;

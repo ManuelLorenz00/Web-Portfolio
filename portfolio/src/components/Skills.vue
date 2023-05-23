@@ -1,20 +1,23 @@
 <template>
-  <section>
-    <div class="skill-header">
-      <h2 class="headline">My Skillstack</h2>
-      <p class="text grey">Here are some of the skills that I've acquired over the years. From front-end web development to
-        server-side
-        scripting, I've worked with a variety of technologies to bring my ideas to life.</p>
-    </div>
-    <div class="skill-grid">
-      <div v-for="skill in skills" :key="skill.name" class="skill-item">
-        <div class="skill-name" :style="{ 'backgroundColor': skill.color }" @mouseover="startAnimation(skill)"
-          :class="{ 'animate': skill.isAnimating }" @animationend="endAnimation(skill)">
-          {{ skill.name }}
+  <div class="scrollactive-item" id="skills">
+    <section>
+      <div class="skill-header">
+        <h2 class="headline">My Skillstack</h2>
+        <p class="text grey">Here are some of the skills that I've acquired over the years. From front-end web development
+          to
+          server-side
+          scripting, I've worked with a variety of technologies to bring my ideas to life.</p>
+      </div>
+      <div class="skill-grid">
+        <div v-for="skill in skills" :key="skill.name" class="skill-item">
+          <div class="skill-name" :style="{ 'backgroundColor': skill.color }" @mouseover="startAnimation(skill)"
+            :class="{ 'animate': skill.isAnimating }" @animationend="endAnimation(skill)">
+            {{ skill.name }}
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -51,7 +54,6 @@ export default {
 </script>
 
 <style scoped>
-
 .headline {
   color: #1dc4ad;
   font-size: 3rem;

@@ -5,42 +5,45 @@ export default {
 </script>
 
 <template>
-  <section>
-    <h2>My past 5 Years</h2>
-    <p class="text">The past five years have been transformative for me, as I underwent significant changes from being a
-      nursing assistent to becoming a web developer. This transition has had a profound impact on both my personal and professional
-      growth. I have developed new technical skills, learned to be more creative and analytical, and become more confident
-      in myself. Furthermore, this journey has helped me grow as a person, teaching me to be more resilient, adaptable,
-      and open-minded, ultimately shaping me into the person I am today.
-    </p>
-    <div class="job-grid">
-      <div class="linie">
-        <div class="letter">R</div>
-        <div class="letter">E</div>
-        <div class="letter">S</div>
-        <div class="letter">U</div>
-        <div class="letter">M</div>
-        <div class="letter">E</div>
-      </div>
+  <div class="scrollactive-item" id="resume">
+    <section>
+      <h2>My past 5 Years</h2>
+      <p class="text">The past five years have been transformative for me, as I underwent significant changes from being a
+        nursing assistent to becoming a web developer. This transition has had a profound impact on both my personal and
+        professional
+        growth. I have developed new technical skills, learned to be more creative and analytical, and become more
+        confident
+        in myself. Furthermore, this journey has helped me grow as a person, teaching me to be more resilient, adaptable,
+        and open-minded, ultimately shaping me into the person I am today.
+      </p>
+      <div class="job-grid">
+        <div class="linie">
+          <div class="letter">R</div>
+          <div class="letter">E</div>
+          <div class="letter">S</div>
+          <div class="letter">U</div>
+          <div class="letter">M</div>
+          <div class="letter">E</div>
+        </div>
 
-      <div class="t1">Vima Werbeagentur <br> Web Entwickler</div>
-      <div class="t2">08/2022 - 02/2023</div>
-      <div class="t3">09/2021 - 04/2022</div>
-      <div class="t4">Codersbay Vienna <br> Diplomlehrgang Softwareentwicklung</div>
-      <div class="t1">Caritas <br> Ausbildung Fachsozialbetreuer</div>
-      <div class="t2">01/2021 - 06/2021</div>
-      <div class="t3">08/2019 - 08/2022</div>
-      <div class="t4">Wiener Sozialdienste <br> Heimhilfe</div>
-      <div class="t1">Wiener Sozialdienste <br> Ausbildung Heimhilfe</div>
-      <div class="t2">01/2019 - 08/2019</div>
-      <div class="t3">01/2018 - 10/2018</div>
-      <div class="t4">Caritas <br> Zivildienst</div>
-    </div>
-  </section>
+        <div class="t1">Vima Werbeagentur <br> Web Entwickler</div>
+        <div class="t2">08/2022 - 02/2023</div>
+        <div class="t3">09/2021 - 04/2022</div>
+        <div class="t4">Codersbay Vienna <br> Diplomlehrgang Softwareentwicklung</div>
+        <div class="t1">Caritas <br> Ausbildung Fachsozialbetreuer</div>
+        <div class="t2">01/2021 - 06/2021</div>
+        <div class="t3">08/2019 - 08/2022</div>
+        <div class="t4">Wiener Sozialdienste <br> Heimhilfe</div>
+        <div class="t1">Wiener Sozialdienste <br> Ausbildung Heimhilfe</div>
+        <div class="t2">01/2019 - 08/2019</div>
+        <div class="t3">01/2018 - 10/2018</div>
+        <div class="t4">Caritas <br> Zivildienst</div>
+      </div>
+    </section>
+  </div>
 </template>
   
 <style>
-
 .linie {
   height: 100%;
   width: 2px;
@@ -126,5 +129,6 @@ export default {
   background-size: 5px 5px, calc(100% - 10px) 2px, 5px 5px, 2px calc(100% - 10px);
   background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
   background-repeat: no-repeat;
-}</style>
+}
+</style>
   

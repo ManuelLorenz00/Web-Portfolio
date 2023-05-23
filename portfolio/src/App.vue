@@ -7,5 +7,7 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style>
-
+html {
+  scroll-behavior: smooth;
+}
 </style>

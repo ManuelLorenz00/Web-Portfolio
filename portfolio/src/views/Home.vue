@@ -21,11 +21,11 @@ export default {
 <template>
     <Navbar />
     <div class="content">
-        <hero />
-        <Portfolio />
-        <Skills/>
-        <CV/>
-        <Contact/>
+        <Hero id="Home" />
+        <Portfolio id="Portfolio" />
+        <Skills id="Skills" />
+        <CV id="CV" />
+        <Contact id="Contact" />
     </div>
 </template>
 

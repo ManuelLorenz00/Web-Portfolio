@@ -1,9 +1,3 @@
-<script>
-export default {
-
-}
-</script>
-
 <template>
     <header class="vertical-header">
         <nav>
@@ -12,27 +6,52 @@ export default {
                 <p class="logo-text">Manuel Lorenz</p>
             </div>
             <ul>
-                <li>
-                    <a>Portfolio</a>
-                </li>
-                <li>
-                    <a>Skills</a>
-                </li>
-                <li>
-                    <a>Resume</a>
-                </li>
-                <li>
-                    <a>Contact</a>
+                <li v-for="route in routes" :key="route.path">
+                    <router-link class="router-link" :to="route.path" :class="{ active: activeNavItem === route.name }"
+                        @click="scrollTo(route.name)">
+                        {{ route.name }}
+                    </router-link>
                 </li>
             </ul>
             <div class="socials">
-                <a href="https://www.linkedin.com/in/manuel-lorenz-393bb1221/"><img class="social-img"
-                        src="@/assets/linkedin.svg"></a>
+                <a href="https://www.linkedin.com/in/manuel-lorenz-393bb1221/">
+                    <img class="social-img" src="@/assets/linkedin.svg" />
+                </a>
             </div>
         </nav>
     </header>
 </template>
+  
+<script>
+import { useRoute } from 'vue-router';
+import ScrollspyMixin from '@/assets/ScrollspyMixin.js';
 
+export default {
+    mixins: [ScrollspyMixin],
+    computed: {
+        routes() {
+            const route = useRoute();
+            return [
+                { name: 'Home', path: '#' },
+                { name: 'Portfolio', path: '#Portfolio' },
+                { name: 'Skills', path: '#Skills' },
+                { name: 'CV', path: '#CV' }, // Updated from 'Resume' to 'CV'
+                { name: 'Contact', path: '#Contact' },
+            ];
+        },
+    },
+    methods: {
+        scrollTo(componentName) {
+            const element = document.getElementById(componentName);
+
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        },
+    },
+};
+</script>
+  
 <style scoped>
 .vertical-header {
     width: 200px;
@@ -85,21 +104,24 @@ li {
     border-top: 2px solid #1d1d1d;
     border-bottom: 2px solid #1d1d1d;
     text-align: center;
+    text-decoration: none;
 }
 
-a {
+a.router-link {
     color: #179181;
     height: 100%;
     width: 100%;
     display: block;
     padding: 1rem;
+    text-decoration: none;
 }
 
-a:hover {
+a.router-link:hover {
     color: #ffffff;
     cursor: pointer;
     font-weight: 500;
     background-color: transparent;
+    transition: all .2s ease-in-out;
 }
 
 .social-img {
@@ -112,3 +134,4 @@ a:hover {
     filter: brightness(0) saturate(100%) invert(56%) sepia(79%) saturate(7092%) hue-rotate(156deg) brightness(97%) contrast(82%);
 }
 </style>
+  
