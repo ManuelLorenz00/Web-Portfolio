@@ -39,6 +39,20 @@ export default {
         <div class="t3">01/2018 - 10/2018</div>
         <div class="t4">Caritas <br> Zivildienst</div>
       </div>
+      <div class="job-grid-mobile">
+        <div class="">08/2022 - 02/2023</div>
+        <div class="">Vima Werbeagentur <br> Web Entwickler</div>
+        <div class="">09/2021 - 04/2022</div>
+        <div class="">Codersbay Vienna <br> Diplomlehrgang Softwareentwicklung</div>
+        <div class="">01/2021 - 06/2021</div>
+        <div class="">Caritas <br> Ausbildung Fachsozialbetreuer</div>
+        <div class="">08/2019 - 08/2020</div>
+        <div class="">Wiener Sozialdienste <br> Heimhilfe</div>
+        <div class="">01/2019 - 08/2019</div>
+        <div class="">Wiener Sozialdienste <br> Ausbildung Heimhilfe</div>
+        <div class="">01/2018 - 10/2018</div>
+        <div class="">Caritas <br> Zivildienst</div>
+      </div>
     </section>
   </div>
 </template>
@@ -129,6 +143,38 @@ export default {
   background-size: 5px 5px, calc(100% - 10px) 2px, 5px 5px, 2px calc(100% - 10px);
   background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
   background-repeat: no-repeat;
+}
+
+.job-grid-mobile {
+  display: none;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: .5rem;
+  padding: 1rem 0;
+}
+
+.job-grid-mobile div {
+  background-image: radial-gradient(circle at 100% 100%, transparent 3px, #1dc4ad 3px, #1dc4ad 5px, transparent 5px), linear-gradient(to right, #1dc4ad, #9b9b9b), radial-gradient(circle at 0% 100%, transparent 3px, #9b9b9b 3px, #9b9b9b 5px, transparent 5px), linear-gradient(to bottom, #9b9b9b, #9b9b9b), radial-gradient(circle at 0% 0%, transparent 3px, #9b9b9b 3px, #9b9b9b 5px, transparent 5px), linear-gradient(to left, #9b9b9b, #1dc4ad), radial-gradient(circle at 100% 0%, transparent 3px, #1dc4ad 3px, #1dc4ad 5px, transparent 5px), linear-gradient(to top, #1dc4ad, #1dc4ad);
+  background-size: 5px 5px, calc(100% - 10px) 2px, 5px 5px, 2px calc(100% - 10px);
+  background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: .5rem 0 .5rem 1rem
+}
+
+@media (max-width: 992px) {
+  .job-grid {
+    display: none;
+  }
+
+  .job-grid-mobile {
+    display: grid;
+  }
+}
+@media (max-width: 776px){
+  .job-grid-mobile div {
+    padding: .5rem;
+  }
 }
 </style>
   

@@ -54,17 +54,11 @@ export default {
 </script>
 
 <style scoped>
-.headline {
-  color: #1dc4ad;
-  font-size: 3rem;
-  text-align: left;
-}
-
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: minmax(120px, auto);
-  grid-gap: 15px;
+  grid-gap: 1rem;
 }
 
 .skill-item {
@@ -119,6 +113,36 @@ export default {
   100% {
     transform: scale(1);
     opacity: 0.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(120px, auto);
+    grid-gap: .3rem;
+  }
+
+  .skill-name {
+    width: 150px;
+    height: 100px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(120px, auto);
+    grid-gap: .3rem;
+  }
+
+  .skill-name {
+    width: 100%;
+    height: 100px;
+    font-size: 1.2rem;
   }
 }
 </style>

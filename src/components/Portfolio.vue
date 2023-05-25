@@ -89,10 +89,8 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: .5rem;
-}
-
-.cell {
-    height: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(120px, auto);
 }
 
 .cell:hover img {
@@ -118,6 +116,7 @@ export default {
     height: auto;
     max-width: 100%;
     transition: all 450ms ease-in-out;
+    padding: 0.5rem;
 }
 
 .img-wrapper {
@@ -126,7 +125,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 7px;
     background-color: #ffffff;
     overflow: hidden;
     border-radius: 5px;
@@ -153,4 +151,5 @@ export default {
     top: 50%;
     left: 50%;
 }
+
 </style>

@@ -43,7 +43,6 @@ export default {
 <style scoped>
 .section {
     height: 100vh;
-    padding: 9rem 4rem;
     display: flex;
     justify-content: center;
     flex-direction: column;

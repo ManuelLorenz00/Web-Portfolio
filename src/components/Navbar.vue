@@ -184,7 +184,14 @@ a.router-link:hover {
 }
 
 .vertical-header.menu-open {
-  transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media (max-width: 576px) {
+    .menu-btn {
+        right: 2rem;
+        top: 2rem;
+    }
 }
 </style>
   

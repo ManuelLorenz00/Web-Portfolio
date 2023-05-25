@@ -99,12 +99,6 @@ section {
   padding: 2rem 0;
 }
 
-@media (max-width: 1400px) {
-  .text {
-    max-width: 70%;
-  }
-}
-
 .fade-in {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -112,4 +106,40 @@ section {
 
 .fade-in.visible {
   opacity: 1;
+}
+
+@media (max-width: 1400px) {
+  section {
+    padding: 2.5rem 2rem 4.5rem;
+  }
+  .text {
+    max-width: 70%;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 2.5rem 2rem 4.5rem;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .text {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 1rem 1rem 2rem;
+  }
 }
