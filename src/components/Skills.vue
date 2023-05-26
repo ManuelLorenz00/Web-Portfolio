@@ -31,7 +31,7 @@ export default {
         { name: "LESS", color: "#1D365D80", isAnimating: false },
         { name: "JavaScript", color: "#F0DB4F80", isAnimating: false },
         { name: "Vue.js", color: "#4FC08D80", isAnimating: false },
-        { name: "Node.js", color: "#83CD2980", isAnimating: false },
+        { name: "npm", color: "#83CD2980", isAnimating: false },
         { name: "jQuery", color: "#0769AD80", isAnimating: false },
         { name: "Java", color: "#00739680", isAnimating: false },
         { name: "MariaDB", color: "#00354580", isAnimating: false },

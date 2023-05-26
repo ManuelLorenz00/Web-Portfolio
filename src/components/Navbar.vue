@@ -18,6 +18,9 @@
                     <img class="social-img" src="@/assets/linkedin.svg" />
                 </a>
             </div>
+            <div class="credit">
+                <p>developed with passion by Manuel Lorenz</p>
+            </div>
         </nav>
     </header>
     <button class="menu-btn" @click="toggleMenu()">
@@ -192,6 +195,17 @@ a.router-link:hover {
         right: 2rem;
         top: 2rem;
     }
+}
+.socials{
+    margin-bottom: 3rem;
+}
+.credit{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 .5rem .5rem;
+    font-size: .7rem;
+    text-align: center;
 }
 </style>
   
