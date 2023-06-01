@@ -47,9 +47,9 @@ export default {
         <div class="">01/2021 - 06/2021</div>
         <div class="">Caritas<br> Training as a Social Care Assistant</div>
         <div class="">08/2019 - 08/2020</div>
-        <div class="">Wiener Sozialdienste<br> Home Helper</div>
+        <div class="">Wiener Sozialdienste<br> mobile Nursing Assistent</div>
         <div class="">01/2019 - 08/2019</div>
-        <div class="">Wiener Sozialdienste<br> Training as a Home Helper</div>
+        <div class="">Wiener Sozialdienste<br> Training as a mobile Nursing Assistent</div>
         <div class="">01/2018 - 10/2018</div>
         <div class="">Caritas<br> Civilian Service</div>
       </div>
