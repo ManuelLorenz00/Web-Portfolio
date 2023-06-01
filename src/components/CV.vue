@@ -26,32 +26,32 @@ export default {
           <div class="letter">E</div>
         </div>
 
-        <div class="t1">Vima Werbeagentur <br> Web Entwickler</div>
+        <div class="t1">Vima Werbeagentur<br> Web Developer</div>
         <div class="t2">08/2022 - 02/2023</div>
         <div class="t3">09/2021 - 04/2022</div>
-        <div class="t4">Codersbay Vienna <br> Diplomlehrgang Softwareentwicklung</div>
-        <div class="t1">Caritas <br> Ausbildung Fachsozialbetreuer</div>
+        <div class="t4">Codersbay Vienna<br> Diploma Course in Software Development</div>
+        <div class="t1">Caritas<br> Training as a Social Care Assistant</div>
         <div class="t2">01/2021 - 06/2021</div>
         <div class="t3">08/2019 - 08/2020</div>
-        <div class="t4">Wiener Sozialdienste <br> Heimhilfe</div>
-        <div class="t1">Wiener Sozialdienste <br> Ausbildung Heimhilfe</div>
+        <div class="t4">Wiener Sozialdienste<br> Home Helper</div>
+        <div class="t1">Wiener Sozialdienste<br> Training as a Home Helper</div>
         <div class="t2">01/2019 - 08/2019</div>
         <div class="t3">01/2018 - 10/2018</div>
-        <div class="t4">Caritas <br> Zivildienst</div>
+        <div class="t4">Caritas<br> Civilian Service</div>
       </div>
       <div class="job-grid-mobile">
         <div class="">08/2022 - 02/2023</div>
-        <div class="">Vima Werbeagentur <br> Web Entwickler</div>
+        <div class="">Vima Werbeagentur<br> Web Developer</div>
         <div class="">09/2021 - 04/2022</div>
-        <div class="">Codersbay Vienna <br> Diplomlehrgang Softwareentwicklung</div>
+        <div class="">Codersbay Vienna<br> Diploma Course in Software Development</div>
         <div class="">01/2021 - 06/2021</div>
-        <div class="">Caritas <br> Ausbildung Fachsozialbetreuer</div>
+        <div class="">Caritas<br> Training as a Social Care Assistant</div>
         <div class="">08/2019 - 08/2020</div>
-        <div class="">Wiener Sozialdienste <br> Heimhilfe</div>
+        <div class="">Wiener Sozialdienste<br> Home Helper</div>
         <div class="">01/2019 - 08/2019</div>
-        <div class="">Wiener Sozialdienste <br> Ausbildung Heimhilfe</div>
+        <div class="">Wiener Sozialdienste<br> Training as a Home Helper</div>
         <div class="">01/2018 - 10/2018</div>
-        <div class="">Caritas <br> Zivildienst</div>
+        <div class="">Caritas<br> Civilian Service</div>
       </div>
     </section>
   </div>
@@ -171,7 +171,8 @@ export default {
     display: grid;
   }
 }
-@media (max-width: 776px){
+
+@media (max-width: 776px) {
   .job-grid-mobile div {
     padding: .5rem;
   }
